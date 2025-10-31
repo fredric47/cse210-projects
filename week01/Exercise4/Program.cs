@@ -9,9 +9,9 @@ class Program
         Console.WriteLine("Hello World! This is the Exercise4 Project.");
 
         List<int> numberList = new List<int>();
-        
-        int sum = 0;
-        int average = 0;
+
+        float sum = 0; 
+        float average = 0;
         int largest = 0;
         int numberCount = 0;
 
