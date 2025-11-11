@@ -17,10 +17,6 @@ public class Journal
     public void AddEntry(string newEntry)
     {
         _entries.Add(newEntry);
-        // foreach (Entry entry in _entries)
-        // {
-        //     Console.WriteLine($"Adding: {entry}");
-        // }
     }
 
     public void DisplayAll()
@@ -34,7 +30,6 @@ public class Journal
 
     public void SaveToFile(string file)
     {
-        // string filename = file;
         Console.WriteLine($"Saving to: {file}");
 
         using (StreamWriter outPutFile = new StreamWriter(file, true)) // , true  %]
@@ -43,8 +38,7 @@ public class Journal
             {
                 outPutFile.WriteLine(line);
             }
-            // outputFile.WriteLine(entry.Display());
-            // Console.WriteLine("saved...");
+
         }
     }
 
@@ -56,9 +50,6 @@ public class Journal
         foreach (string line in lines)
         {
             Console.WriteLine(line);
-            // string[] parts = line.Split(",");
-            // string firstName = parts[0];
-            // string lastName = parts[1];
         }
     }
 

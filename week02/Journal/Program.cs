@@ -1,6 +1,6 @@
 //To show creativivy I added a function to Journals.cs that is called after saving which clears and trims the _entries list.
 //This is to help make sure there won't be any duplicate saves if the user tries to save again after adding another entery. To learn about clear and trim functions I used "https://stackoverflow.com/questions/5311124/how-to-empty-a-list-in-c"
-
+// save1.txt    is the test journal file
 using System;
 using System.Data;
 using System.IO.Enumeration;
@@ -34,7 +34,6 @@ class Program
                 Entry entry = new Entry();
                 string datePrompt = entry.Display();
                 journal.AddEntry(datePrompt);
-                //Console.WriteLine($"---TEST47---\n{_entry._date}1\n{_entry._entryText}2\n{_entry._promptText}3");
             }
 
             else if (action == 2)//2. display
@@ -44,13 +43,13 @@ class Program
 
             else if (action == 3)//3. Load
             {
-                Console.Write("What file do you want to load from? ");//load 3
+                Console.Write("What file do you want to load from? (save1.txt)? ");
                 journal.LoadFromFile(Console.ReadLine());
             }
 
             else if (action == 4)//4. save
             {
-                Console.Write("What file do you want to save to? ");
+                Console.Write("What file do you want to save to? (save1.txt)? ");
                 string fileName = Console.ReadLine();
                 journal.SaveToFile(fileName);
                 journal.ClearList();
