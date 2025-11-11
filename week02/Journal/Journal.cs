@@ -1,27 +1,66 @@
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection.Metadata;
 
 public class Journal
 {
-    public List<Entry> _entries; // = new List<Entry>();
+    public List<string> _entries = new List<string>();
 
-    public void AddEntry(Entry newEntry)
+    public void ClearList()
     {
+        _entries.Clear();
+        _entries.TrimExcess();
+    }
 
+    public void AddEntry(string newEntry)
+    {
+        _entries.Add(newEntry);
+        // foreach (Entry entry in _entries)
+        // {
+        //     Console.WriteLine($"Adding: {entry}");
+        // }
     }
 
     public void DisplayAll()
     {
+        foreach (string entry in _entries)
+        {
+            Console.WriteLine($"{entry}");
+        }
 
     }
 
     public void SaveToFile(string file)
     {
+        // string filename = file;
+        Console.WriteLine($"Saving to: {file}");
 
+        using (StreamWriter outPutFile = new StreamWriter(file, true)) // , true  %]
+        {
+            foreach (string line in _entries)
+            {
+                outPutFile.WriteLine(line);
+            }
+            // outputFile.WriteLine(entry.Display());
+            // Console.WriteLine("saved...");
+        }
     }
-    
+
     public void LoadFromFile(string file)
     {
-        
+        string fileName = file;
+        string[] lines = System.IO.File.ReadAllLines(fileName);
+
+        foreach (string line in lines)
+        {
+            Console.WriteLine(line);
+            // string[] parts = line.Split(",");
+            // string firstName = parts[0];
+            // string lastName = parts[1];
+        }
     }
 
 }
+ 

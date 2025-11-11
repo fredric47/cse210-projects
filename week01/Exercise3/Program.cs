@@ -13,7 +13,7 @@ class Program
         // string stringNumber = Console.ReadLine();
 
 
-        // Console.WriteLine($"magic number is {mNumber}");
+        Console.WriteLine($"magic number is {mNumber}");
 
 
         string playAgain = "yes";
@@ -48,3 +48,4 @@ class Program
         // playAgain = Console.ReadLine();
     }
 }
+ 
