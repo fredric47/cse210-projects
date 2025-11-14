@@ -1,5 +1,5 @@
 //To show creativivy I added a function to Journals.cs that is called after saving which clears and trims the _entries list.
-//This is to help make sure there won't be any duplicate saves if the user tries to save again after adding another entery. To learn about clear and trim functions I used "https://stackoverflow.com/questions/5311124/how-to-empty-a-list-in-c"
+//This is to help make sure there won't be any duplicate saves if the user tries to save again after adding another entry. To learn about clear and trim functions I used "https://stackoverflow.com/questions/5311124/how-to-empty-a-list-in-c"
 // save1.txt    is the test journal file
 using System;
 using System.Data;
@@ -12,7 +12,7 @@ class Program
         Console.WriteLine("Welcome to the Journal Program!");
 
 
-        
+
 
         Journal journal = new Journal();
 
@@ -67,4 +67,3 @@ class Program
         }
     }
 }
- 
