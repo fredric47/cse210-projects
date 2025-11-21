@@ -20,7 +20,7 @@ public class Fraction
     public Fraction(int top, int bottom)
     {
         _top = top;
-        _bottom = bottom;
+        _bottom = bottom; 
     }
 
     
