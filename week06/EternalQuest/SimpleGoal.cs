@@ -9,17 +9,17 @@ public class SimpleGoal : Goal
 
     }
 
-    public void RecordEvent()
-    {
+    // public void RecordEvent()
+    // {
 
-    }
+    // }
 
-    public bool IsComplete()
+    public override bool IsComplete()
     {
         return true;
     }
     
-    public string GetRepresentation()
+    public override string GetRepresentation()
     {
         return "";
     }

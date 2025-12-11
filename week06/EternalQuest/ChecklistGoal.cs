@@ -10,7 +10,7 @@ public class ChecklistGoal : Goal
         _bonus = bonus;
     }
 
-    public void RecordEvent()
+    public  void RecordEvent()
     {
 
     }

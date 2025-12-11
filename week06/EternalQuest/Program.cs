@@ -3,9 +3,11 @@ using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
+
+    GoalManager gm1 = new GoalManager();
     static void Main(string[] args)
     {
-        GoalManager GM = new GoalManager();
+        GoalManager gm1 = new GoalManager();
 
         string userSelection = "0";
         while (userSelection != "6")
@@ -15,7 +17,7 @@ class Program
 
             if (userSelection == "1")//creare new goal
             {
-
+                gm1.CreateGoal();
             }
 
             else if (userSelection == "2")//list goals

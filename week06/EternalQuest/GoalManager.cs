@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Diagnostics.Contracts;
+using System.IO;
 
 public class GoalManager
 {
@@ -51,6 +52,42 @@ public class GoalManager
 
     public void CreateGoal()
     {
+        int selection = 4;
+        while (selection! < 4)
+        {
+            Console.Write("\nWhat type of a goal do you want to create?\n 1. Simple Goal\n2. Eternal Goal\n3. Checklist Goal\n>");
+            selection = Console.ReadLine();
+        }
+
+        if (selection == 1)
+        {
+
+        }
+
+        else if (selection == 2)
+        {
+
+        }
+        
+        else if (selection == 3)
+        {
+            
+        }
+
+        else
+        {
+            Console.Write("ERROR! Try again! 1-3 : ");
+            selection = Console.ReadLine();
+        }
+
+
+            string GoalSaveFile = "What file do you want to save to?(Goal Save1)";
+        using (StreamWriter outputFile = new StreamWriter(GoalSaveFile))
+        {
+            outputFile.WriteLine("First line of text");
+            
+        }
+
         Console.Write("What type of Goal do you want to create?");
         Console.Write("What is the name of the goal?");
         Console.Write("What is the discription of the goal?");

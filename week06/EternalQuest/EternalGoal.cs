@@ -7,17 +7,17 @@ public class EternalGoal : Goal
 
     }
 
-    public void RecordEvent()
+    public override void RecordEvent()
     {
 
     }
 
-    public bool IsComplete()
+    public override bool IsComplete()
     {
         return true;
     }
     
-    public string GetStringRepresentation()
+    public override string GetStringRepresentation()
     {
         return "";
     }

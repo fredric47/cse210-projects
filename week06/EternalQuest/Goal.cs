@@ -2,9 +2,9 @@ using System.ComponentModel;
 
 public class Goal
 {
-    protected string _shortName;
-    protected string _description;
-    protected string _points;
+    private string _shortName;
+    private string _description;
+    private string _points;
 
     public Goal(string name, string description, string points)
     {
@@ -18,17 +18,17 @@ public class Goal
 
     }
 
-    public bool IsComplete()
+    public virtual bool IsComplete()
     {
         return true;
     }
 
-    public string GetDetailsString()
+    public virtual string GetDetailsString()
     {
         return "";
     }
     
-    public string GetStringRepresentation()
+    public virtual string GetStringRepresentation()
     {
         return "";
     }
