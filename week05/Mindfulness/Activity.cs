@@ -55,7 +55,6 @@ public class Activity
     
     public void ShowCountdown(int seconds)
     {
-        
         for (int i = seconds; i > -1; i--)
         {
             Console.Write(i);
