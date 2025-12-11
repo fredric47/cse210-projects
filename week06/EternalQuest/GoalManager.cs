@@ -6,6 +6,13 @@ public class GoalManager
     private List<Goal> _goals = new List<Goal>();
     private int _score;
 
+    // private string _goalType;
+    // private string _goalName;
+    // private string _goalDescription;
+    // private int _goalPointAmmount;
+    // private int _timesTillBonus;
+    // private int _bonusAmmount;
+
     // public string name1 = "Get Jacked";
     // public string name2 = "Be Awesome";
     // public string description1 = "Workout like mad!";
@@ -66,10 +73,10 @@ public class GoalManager
     
     public void LoadGoals()
     {
-        foreach (Goal goal in _goals)
-        {
-            Console.Write($"\nGoal: {goal._shortName} \nDescription: {goal._description} (worth {goal._points} points)\n");
-        }
+        // foreach (Goal goal in _goals)
+        // {
+        //     Console.Write($"\nGoal: {goal._shortName} \nDescription: {goal._description} (worth {goal._points} points)\n");
+        // }
         
     }
 }

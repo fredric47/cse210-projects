@@ -2,9 +2,9 @@ using System.ComponentModel;
 
 public class Goal
 {
-    public string _shortName;
-    public string _description;
-    public string _points;
+    protected string _shortName;
+    protected string _description;
+    protected string _points;
 
     public Goal(string name, string description, string points)
     {
